@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCD", "LCD\LCD.csproj", "{C18DB305-6419-46B3-8352-91ECCAEB9DC5}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup-LCD", "Setup-LCD\Setup-LCD.vdproj", "{409542A2-FE24-46DC-936D-2654CD2C29BC}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LCD-Installer", "LCD-Installer\LCD-Installer.vdproj", "{E2035AC4-3DFC-4443-947B-E2D5560E87C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,13 @@ Global
 		{C18DB305-6419-46B3-8352-91ECCAEB9DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C18DB305-6419-46B3-8352-91ECCAEB9DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C18DB305-6419-46B3-8352-91ECCAEB9DC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{409542A2-FE24-46DC-936D-2654CD2C29BC}.Debug|Any CPU.ActiveCfg = Debug
-		{409542A2-FE24-46DC-936D-2654CD2C29BC}.Release|Any CPU.ActiveCfg = Release
+		{E2035AC4-3DFC-4443-947B-E2D5560E87C2}.Debug|Any CPU.ActiveCfg = Debug
+		{E2035AC4-3DFC-4443-947B-E2D5560E87C2}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEBCF011-0E99-409D-93A2-A33373EF23B0}
 	EndGlobalSection
 EndGlobal

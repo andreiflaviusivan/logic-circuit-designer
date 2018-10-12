@@ -246,10 +246,3 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 .DS_Store
-
-npmlibs/
-bowlibs/
-/Mindgaze.SSO/test/Mindgaze.SSO.Tests/pgsql/
-/Mindgaze.SSO/test/Mindgaze.SSO.Tests/*.zip
-dist/
-Server/**/version.txt

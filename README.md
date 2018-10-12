@@ -1,9 +1,11 @@
 # Logic Circuit Designer
-Design and Simulate Logic Circuits
+## Design and Simulate Logic Circuits
 
 Logic Circuit Designer is a lightweight software application whose purpose is to help you create logic circuits and visually simulate the operation.
 
 It can be used for educational purposes, as it offer you the possibility to learn how to build a circuit design and understand how a logic circuit works.
+
+![Main Window](https://github.com/andreiflaviusivan/logic-circuit-designer/raw/master/LCD/LCD/Help/resources/Main%20Window.png)
 
 ## Intuitive Interace
 
@@ -30,5 +32,7 @@ To be released soon!
 ## Contact
 
 Authors:
+
 Andrei Ivan: af.ivan@live.com
+
 Radoi Ovidiu: oviradoi2003@yahoo.com

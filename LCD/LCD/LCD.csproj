@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C18DB305-6419-46B3-8352-91ECCAEB9DC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LCD</RootNamespace>
+    <AssemblyName>LCD</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>HardwareChip.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>84D4BAC7D0CAA9ADCD2DADC188B9392CC32D744E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>LCD_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>F:\LCD\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Logic Circuit Designer</ProductName>
+    <PublisherName>Ivan Andrei, Radoi Ovidiu</PublisherName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Abstract\BasicGate.cs" />
+    <Compile Include="Components\Dot.cs" />
+    <Compile Include="Components\Circuit.cs" />
+    <Compile Include="Components\Gates\And.cs" />
+    <Compile Include="Components\Gates\Btn.cs" />
+    <Compile Include="Components\Gates\Clk.cs" />
+    <Compile Include="Components\Gates\Input.cs" />
+    <Compile Include="Components\Gates\Led.cs" />
+    <Compile Include="Components\Gates\Module.cs" />
+    <Compile Include="Components\Gates\Nand.cs" />
+    <Compile Include="Components\Gates\Nor.cs" />
+    <Compile Include="Components\Gates\Not.cs" />
+    <Compile Include="Components\Gates\Nxor.cs" />
+    <Compile Include="Components\Gates\Or.cs" />
+    <Compile Include="Components\Gates\SSD.cs" />
+    <Compile Include="Components\Gates\Xor.cs" />
+    <Compile Include="Components\Wire.cs" />
+    <Compile Include="Components\Abstract\Gate.cs" />
+    <Compile Include="Components\WirePoint.cs" />
+    <Compile Include="Interface\Additional\LinePointUtils.cs" />
+    <Compile Include="Interface\CircuitView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interface\LCD-Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\LCD-Settings.Designer.cs">
+      <DependentUpon>LCD-Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\LCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\LCD.Designer.cs">
+      <DependentUpon>LCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\LCDAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\LCDAbout.designer.cs">
+      <DependentUpon>LCDAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\NoMousewheelTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interface\Simulate.cs" />
+    <Compile Include="Components\IUndoRedo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interface\LCD-Settings.resx">
+      <DependentUpon>LCD-Settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\LCD.resx">
+      <DependentUpon>LCD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\LCDAbout.resx">
+      <DependentUpon>LCDAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="VistaSecurity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\and.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardwareChip.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardwareChip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hcer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\input.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inv.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NAND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nxor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\or.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UN.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\vcer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HardwareChip.ico" />
+    <Content Include="Help\help.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\Adder Circuit 1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\Binary Operation Table.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\First Circuit 1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\First Circuit 2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\First Circuit 3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\First Circuit 4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\First Circuit 5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\First Circuit 6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\First Circuit 7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\HardwareChip.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\Left Menu.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\Main Window.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\Menu Tool Strip.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\Parity Circuit 1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\Parity Circuit 2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\resources\Parity Circuit 3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,695 @@
+<html>
+<head>
+	<title>Logic Circuit Designer - Help</title>
+	<link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body>
+
+	<table align="center">
+		
+		<th>
+			Logic Circuit Designer
+		</th>
+		
+		<tr>
+			
+			<td>
+				<img src="resources/HardwareChip.png">
+			</td>
+		
+		</tr>
+		
+		<tr>
+			<td>
+				<p class="ItaliqueParagraph">
+				Learn about logic circuit building
+				</p>
+			</td>
+		</tr>
+		
+		<br/>
+		
+		<tr>
+			<td class="RightAlignTD">
+			
+				<br/>
+				
+				<p>
+					<font class="AugmentedText">
+					Authors: 
+					</font>
+				<br/>
+				Ivan Andrei
+				<br/>
+				Radoi Ovidiu
+				</p>
+			</td>
+		</tr>
+		
+		<tr>
+			
+			<td>
+			
+				<br/>
+				
+				<font class="SmallText">
+					2009
+				</font>
+			</td>
+		
+		</tr>
+				
+		<tr>
+			<td>
+				<hr/>
+			</td>
+			
+			
+		</tr>
+		
+		<tr>
+			<td>
+							
+			
+				<ol class="UpperRomanLeftCenteredList">
+					<li>
+						<a class="ChapterText" href="#Introduction">
+						Introduction
+						</a>
+						
+						<p class="CenteredParagraph">
+							<ol class="DecimalLeftCenteredList">
+								<li>
+									<a class="SubChapterText" href="#Introduction - Anything Goes">
+									Anything goes
+									</a>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" href="#Introduction - Computer Education">
+									Computer education
+									</a>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" href="#Introduction - Good or not">
+									Is it good or not?
+									</a>
+								</li>
+							</ol>
+						</p>
+					</li>
+					
+					<li>
+						<a class="ChapterText" href="#Preliminaries">
+						Preliminaries
+						</a>
+						
+						<p class="CenteredParagraph">
+							<ol class="DecimalLeftCenteredList">
+								<li>
+									<a class="SubChapterText" href="#Preliminaries - Informatics : a high-level science">
+									Informatics : a high-level science
+									</a>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" href="#Preliminaries - Computer architecture">
+									Computer architecture
+									</a>
+								</li>
+								
+								<li>
+									<a class="SubChapterText"  href="#Preliminaries - Main purpose of the application">
+									Main purpose of the application
+									</a>
+								</li>
+							</ol>
+						</p>
+					</li>
+					
+					<li>
+						<a class="ChapterText" href="#The program">
+						The program
+						</a>
+						
+						<p class="CenteredParagraph">
+							<ol class="DecimalLeftCenteredList">
+								<li>
+									<a class="SubChapterText" href="#The program - The main window">
+									The main window
+									</a>
+									
+								</li>
+								
+								<li>
+									<a class="SubChapterText" href="#The program - First Circuit">
+									Our first “Hello World!” circuit
+									</a>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" href="#The program - Parity Circuit">
+									Building a parity circuit
+									</a>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" href="#The program - Adder Circuit">
+									Building a modulo-2 adder circuit
+									</a>
+								</li>
+							</ol>
+						</p>
+					</li>
+					
+					<li>
+						<a class="ChapterText" href="#Conclusions">
+						Conclusions
+						</a>
+						
+						<p class="CenteredParagraph">
+							<ol class="DecimalLeftCenteredList">
+								<li>
+									<a class="SubChapterText" href="#Conclusions - How computers work">
+									It’s nice to know a little about how computers work
+									</a>
+									
+								</li>
+								
+								<li>
+									<a class="SubChapterText" href="#Conclusions - Why this program helps you">
+									Two reasons why this program helps you
+									</a>
+								</li>
+								
+							</ol>
+						</p>
+					
+				</ol>
+				
+			</td>
+			
+		</tr>
+		
+		
+		
+		
+		
+		
+		
+		<tr>
+			<td>
+							
+			
+				<ol class="UpperRomanLeftCenteredList">
+					<li>
+						<a class="ChapterText" name="Introduction">
+						Introduction
+						</a>
+						
+						<p class="CenteredParagraph">
+							<ol class="DecimalLeftCenteredList">
+								<li>
+									<a class="SubChapterText" name="Introduction - Anything Goes">
+									Anything goes
+									</a>
+									
+									<p>
+									The world we live in is constant changing. Everything in our environment is making large steps towards the future, according to the people’s needs. We, being in the power to change the face of the earth, must take care that this changing process goes well and without affecting the environment and its living beings (including us). In order to achieve that, people must have a certain level of knowledge, discipline and respect for the nature to be able to live in peace and harmony.
+									</p>
+									
+									<p>
+									But what leads to a certain level of knowledge needed for our future existence? The answer is education. Starting at an early age, education is the pillar of forming us as humans.
+									</p>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" name="Introduction - Computer Education">
+									Computer education
+									</a>
+									
+									<p>
+									Learning is changing as well, especially the technologies of learning. E-education is the process of learning where computers are used at each possible step of the process. Obviously, computers cannot replace human teachers as children need affection, compassion and communication. Computers, on the other side, are good tools for the learning process. One of the reasons computers seem to be excellent tools for learning is the attraction they exercise upon children and teen-agers. But if we go deep into this phenomenon, it is possible to observe that this attraction is due to two main reasons: what we call the "cosmetics" and the "video game" effects.
+									</p>
+									
+									<p>
+									In the first case, users are attracted by the multi-media effects, such as fascinating pictures, sound and animation. In the second, by an excitement similar to that felt when playing a video game: the setting is perfectly, mathematically defined, and the user feels the power of completely dominating the machine. When the desired result is not reached - either not being able to force the machine to do what was expected, or not being able to discover by trial-and-error an appropriate command or sequence of commands - the user enters into a state of excitement which stems from a purely intellectual challenge. We mean here a challenge which has nothing to do with physical ability (such as those required in sports). The certainty that one will eventually discover the right way to do something with the computer attracts the user to such a degree that he forgets everything else, entering what we have called "the obsessive user state."
+									</p>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" name="Introduction - Good or not">
+									Is it good or not?
+									</a>
+									
+									<p>
+									An interesting question is this: what happens to a student who gets used to learning with computers? Is he going to tolerate a normal class without all those cosmetic and video game effects? How about the interest in reading and studying through books, and the concentration necessary for this activity? We conjecture that all these activities will be damaged by the use of the unique setting presented by computers. In other words, computers damage traditional learning methods. Whether this is good or not, it’s a delicate subject.
+									</p>
+								</li>
+							</ol>
+						</p>
+					</li>
+					
+					<li>
+						<a class="ChapterText" name="Preliminaries">
+						Preliminaries
+						</a>
+						
+						<p class="CenteredParagraph">
+							<ol class="DecimalLeftCenteredList">
+								<li>
+									<a class="SubChapterText" name="Preliminaries - Informatics : a high-level science">
+									Informatics : a high-level science
+									</a>
+									
+									<p>
+									Although it is not a very old scientific domain, Informatics is nowadays perhaps the most known one. This is because of the fact that computers became widely used, making our life much easier and enjoyable. 
+									</p>
+									
+									<p>
+									Maybe for the ones of us who are in charge of computer programming and hardware designing the life would be simpler if computers didn’t exist. Being the result of such many domains (Algorithmics, Geometry, Numerical Calculus, Data Structures, Boolean Algebra) is making the specialists in this domain a hard time because a little bit of knowledge about all of them is necessary.
+									</p>
+									
+									<p>
+									Also, it is unnecessary to mention the hard work needed to become a specialist in this domain… Here, in Romania, we study both mathematical principles behind computers as well as the practical ones. A discipline that is caught somewhere on the border between theoretical and practical aspects is the Computer Architecture discipline.
+									</p>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" name="Preliminaries - Computer architecture">
+									Computer architecture
+									</a>
+									
+									<p>
+									In computer engineering, computer architecture is the conceptual design and fundamental operational structure of a computer system. It is a blueprint and functional description of requirements and design implementations for the various parts of a computer, focusing largely on the way by which the central processing unit (CPU) performs internally and accesses addresses in memory.
+									</p>
+									
+									<p>
+									It may also be defined as the science and art of selecting and interconnecting hardware components to create computers that meet functional, performance and cost goals.
+									</p>
+									
+									<p>
+									We won’t go into deep details about its subcategories, but we will stop at one of them. It represents the engine of the chips: the logic circuits. 
+									</p>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" name="Preliminaries - Main purpose of the application">
+									Main purpose of the application
+									</a>
+									
+									<p>
+									From the practical point of view, this paper refers to an educational software developed as a technological tool for understanding the logic circuits operation. Using such an interactive designer software, we have the main advantage and the opportunity of removing all the possible design errors even before proceeding to the expensive component manufacturing and assembly. 
+									</p>
+									
+									<p>
+									From the educational point of view, our application, Logic Circuit Designer, is aimed to help both those students and users, studying computer architecture or more specifically, digital logic circuits. This product is a simulator for logic circuits, allowing the student to better visualize and understand how a logic circuit works, by enabling him to build whatever logic circuit he wants, and visually simulate its operation. Based on a friendly user interface, the student can interact with its logic circuit, flip switches, change the input data, and watch the output data changes for sequential models. 
+									</p>
+									
+									<p>
+									We are sure that this tool will be of great help to any student who has interest in this field, and enable him to better understand the logic circuit design process.
+									</p>
+								</li>
+							</ol>
+						</p>
+					</li>
+					
+					<li>
+						<a class="ChapterText" name="The program">
+						The program
+						</a>
+						
+						<p class="CenteredParagraph">
+							<ol class="DecimalLeftCenteredList">
+								<li>
+									<a class="SubChapterText" name="The program - The main window">
+									The main window
+									</a>
+									
+									<p>
+									<img src="resources/Main Window.jpg">
+									</p>
+									
+									<p>
+									As you can see, in the main window we can find the tools we need to build the circuits. At the top there is a contextual menu: File, Edit, View, Selection, Align, Tools and Help. We won’t go very deep into their description because the majority of them can be found in the menu just below and on the left side of the window.
+									</p>
+									
+									<p>
+									Below the main menu, we can find a tool container divided into 4 categories:
+									</p>
+									
+									<p>
+									<img src="resources/Menu Tool Strip.jpg">
+									</p>
+									
+									<p>
+										<ul>
+											<li>
+												<font class="AugmentedText">Basic tools: </font>
+												<font class="InsistedText">New, Open, Save, Print, Cut, Copy, Paste, Undo, Redo, Help</font>
+												<font class="NormalText">;</font>
+											</li>
+											
+											<li>
+												<font class="AugmentedText">Selection tools: </font>
+												
+												<ul class="SquareList">
+													<li>
+														<font class="InsistedText">Select:</font>
+														<font class="NormalText">selects only gates, only wires or both of them;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">Deselect:</font>
+														<font class="NormalText">deselects only gates, only wires or both of them;</font>
+													</li>
+													
+													<li>	
+														<font class="InsistedText">Invert Selection:</font>
+														<font class="NormalText">inverts the selection of gates, wires or both of them;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">Crop Selection:</font>
+														<font class="NormalText">only the selected components remain, the rest of them are deleted. It can be applied only to gates, wires or both of them;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">Delete Selected Components:</font>
+														<font class="NormalText">can be applied like all the above ones;</font>
+													</li>
+												</ul>
+											
+											</li>
+											
+											<li>
+												<font class="AugmentedText">Alignment menu: </font>
+												
+												<ul class="SquareList">
+													<li>
+														<font class="InsistedText">Align left sides:</font>
+														<font class="NormalText">the components will be aligned to the left of the most left control;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">Align vertical centers:</font>
+														<font class="NormalText">the components will be aligned at the middle of their vertical coordinate;</font>
+													</li>	
+														
+													<li>
+														<font class="InsistedText">Align right sides:</font>
+														<font class="NormalText">the components will be aligned to the right of the most right control;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">Align top edges:</font>
+														<font class="NormalText">the components will be aligned to the top of the most above control;</font>
+													</li>	
+													
+													<li>
+														<font class="InsistedText">Align horizontal centers:</font>
+														<font class="NormalText">the components will be aligned at the middle of their horizontal coordinate;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">Align bottom edges:</font>
+														<font class="NormalText">the components will be aligned to the bottom of the most below control;</font>
+													</li>
+												</ul>
+											
+											</li>
+											
+											<li>
+												<font class="AugmentedText">Circuit control menu:</font>
+												
+												<font class="NormalText">from this menu we are able to set the simulation engine of the circuit on or off. Also, we can choose how many inputs should any new created gate have (except for the NOT gate). When dealing with complicated circuits, we notice that every input and output has a meaning and we can easily forget what means each one. So a name to any input or output can be given to overcome this issue.</font>
+											</li>
+										</ul>
+									</p>
+									
+									<p>
+									As for the left menu, this is where we choose the gates to add to a circuit. Just click on the one you want to add and it will appear on the right-top corner of the circuit.
+									</p>
+									
+									<p>
+									Under the basic gates section we see the main logic gates needed in any circuit, then there are some more advanced ones including the inputs and outputs (we can also call them buttons and leds) and of course the module adder.
+									</p>
+									
+									<p>
+									<img src="resources/Left Menu.jpg">
+									</p>
+									
+									<p>
+										<ul>
+											<li>
+												<font class="AugmentedText">Basic gates: </font>
+												<ul class="SquareList">
+													<li>
+														<font class="InsistedText">AND :</font>
+														<font class="NormalText">the return value is 1 only when all of the inputs must are 1;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">OR :</font>
+														<font class="NormalText">the return value is 1 if at least one of the inputs is 1;</font>
+													</li>	
+													
+													<li>
+														<font class="InsistedText">NOT :</font>
+														<font class="NormalText">the return value is 1 if the input value is 0 and 0 if the input value is 1;</font>
+													</li>
+
+													<li>
+														<font class="InsistedText">XOR :</font>
+														<font class="NormalText">the return value is 1 if the number of inputs which have 1 is odd and 0 otherwise;</font>
+													</li>	
+													
+													<li>
+														<font class="InsistedText">NAND :</font>
+														<font class="NormalText">same as AND but its result is inverted;</font>
+													</li>
+														
+													<li>
+														<font class="InsistedText">NOR  :</font>
+														<font class="NormalText">same as OR but its result is inverted;</font>
+													</li>
+														
+													<li>
+														<font class="InsistedText">NXOR  :</font>
+														<font class="NormalText">same as XOR but its result is inverted;</font>
+													</li>
+												</ul>
+											</li>
+											
+											<li>
+												<font class="AugmentedText">Extended gates: </font>
+												
+												<ul class="SquareList">
+													<li>
+														<font class="InsistedText">BUTTON :</font>
+														<font class="NormalText">this is a simple input. When simulating, its value can be changed by clicking it;</font>
+													</li>	
+													
+													<li>
+														<font class="InsistedText">INPUT :</font>
+														<font class="NormalText">this is more like a SSD (Seven Segments Display) input. Its hex value is converted to a binary form which can be used further in the circuit. Its value can be easily changed;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">LED :</font>
+														<font class="NormalText">this is the basic output of a circuit. If its value is 1 then the LED is lighted;</font>
+													</li>
+													
+													<li>
+														<font class="InsistedText">SSD:</font>
+														<font class="NormalText">this is and output which has 4 inputs representing the hex value it will show;</font>
+													</li>
+
+													<li>
+														<font class="InsistedText">CLOCK:</font>
+														<font class="NormalText">the value on its output will be 1 for a certain period of time and 0 for another period of time. Both time periods can be set by the user;</font>
+													</li>
+												</ul>
+											
+											</li>
+											
+											<li>
+												<font class="AugmentedText">Modules : </font>
+												
+												<font class="NormalText">the modules package allows users to integrate a circuit in a more complicated circuit for as many times as they want without recreating it. This saves a lot of time and also increases efficiency.</font>
+											
+											</li>
+											
+										</ul>
+									</p>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" name="The program - First Circuit">
+									Our first “Hello World!” circuit
+									</a>
+									
+									<p>
+									We are going to create our first circuit. It will be built using one gate, two leds and one output. First, we will click the AND button to add an AND gate. Notice that it will appear on the top left corner of the circuit. Also, don’t forget to create a new circuit. You can move the new created gate anywhere you like and you can also rotate it with the mouse wheel after selecting it.
+									</p>
+									
+									<img src="resources/First Circuit 1.jpg">
+									
+									<p>
+									Now it’s time to add the two inputs (buttons). To add two buttons click the BUTTON twice. The buttons will appear in the same place as the gate. Move them to a place where both of them can be seen. Any circuit must have an output, so add a LED to the circuit and move it to the right of the gate. The circuit must look like this: 
+									</p>
+									
+									<img src="resources/First Circuit 2.png">
+									
+									<p>
+									But what’s the point of creating the gates, inputs and outputs if they are not linked together? For that we will use wires which connect the red dots. To create a wire you must move the mouse over the dot you need to link (the cursor changes to a cross), click the mouse and holding it move to the second dot which needs to be linked where you release the mouse button. What we need to do now is to link the buttons with one of the AND gate inputs and the output of the gate with the led. Now the circuit is looking like this:
+									</p>
+									
+									<img src="resources/First Circuit 3.png">
+									
+									<p>
+									And this circuit is complete. It’s time now to simulate it. As you know, the AND logic operation returns the 1 value if both inputs are 1. To simulate the circuit click the SIMULATE button. Now the circuit enters the simulation state. By clicking an input you change its value affecting all the gates to which it is connected. Feel free to play with the simulation until you understand the logic of the AND  gate but also the main purpose of this program. Here we can see the simulation states:
+									</p>
+									
+									<img src="resources/First Circuit 4.jpg">
+									
+									<img src="resources/First Circuit 5.jpg">
+									
+									<img src="resources/First Circuit 6.jpg">
+									
+									<p>
+									We notice that only in the third case when the inputs are 1 the value of the output is 1 and the led is lighten.
+									</p>
+									
+									<p>
+									There is one more thing that should be explained. It’s about the links between the gates. Because of the increasing complexity of the circuits, the wires tend to be very hard to maintain and it becomes difficult to realize what wire is connected to a certain gate and so on. This is where the wire segmentation comes in. Any wire may be divided into as many segments as the user wishes. To create a segment for a wire, just click the right mouse button on the respective wire and at the point you want the segment to be. This is a simple way to manage the wire connections. If you want to delete the segment, you can just right-click the mouse again in the respective blue dot. Look how the circuit may look if we play a little bit with this wire segmentation.
+									</p>
+									
+									<img src="resources/First Circuit 7.jpg">
+								</li>
+								
+								<li>
+									<a class="SubChapterText" name="The program - Parity Circuit">
+									Building a parity circuit
+									</a>
+									
+									<p>
+									Next, we will demonstrate the importance of the XOR gate. XOR gate is short for exclusive OR. This means that precisely one input must be 1 (true) for the output to be 1 (true). A way to remember XOR is "one or the other but not both." The XOR operation is a binary operation and is therefore defined only for two inputs. It is nevertheless common in electronic design to talk of "XOR-ing" three or more signals
+									</p>
+									
+									<p>
+									The most common interpretation of this usage is that the first two signals are fed into an XOR gate, then the output of that gate is fed into a second XOR gate together with the third signal, and so on for any remaining signals. The result is a circuit that outputs a 1 when the number of 1s at its inputs is odd, and a 0 when the number of incoming 1s is even. This makes it practically useful as a parity generator or a modulo-2 adder.
+									</p>
+									
+									<p>
+									Certainly, there are many uses of this XOR gate. We will make a simple circuit that outputs 1 only when the number of 1 on the inputs is odd. The circuit has 3 inputs and one output. The main part of the circuit is represented by 2 XOR gates. Also, we can build it using one XOR with 3 inputs.
+									</p>
+									
+									<img src="resources/Parity Circuit 1.jpg">
+									
+									<p>
+									Till now we only added the gates, the inputs and outputs. Now it’s time to link them: the first two buttons are linked to the inputs of the first XOR, then the output of the first XOR is wired to the first input of the second one. The last button must be linked to the second output of the second XOR and finally we link the second’s XOR output to the led. The next step is the simulation: we will notice that the led is lighten only if an odd number of the buttons are on. This is how the final circuit should look like:
+									</p>
+									
+									<img src="resources/Parity Circuit 2.jpg">
+									
+									<p>
+									I also want to show how this circuit can be simplified. We can achieve the same behavior of the XOR  gates by using only one. The difference is that it has 3 inputs, not only 2 like the other two had. Have a look at this new simplified circuit:
+									</p>
+									
+									<img src="resources/Parity Circuit 3.jpg">
+								</li>
+								
+								<li>
+									<a class="SubChapterText" name="The program - Adder Circuit">
+									Building a modulo-2 adder circuit
+									</a>
+									
+									<p>
+									Practically, a modulo-2 adder circuit adds 2 binary digits giving the result of this operation. Going deeper into the theory, we know that in binary system there are only two digits: 0 and 1. Of course, we can add them in order to obtain a result, but this operation’s output isn’t only the result but a special digit called transport. It is like when you add 9 and 1 and it results 10. The following table shows all the possibilities of adding two binary digits:
+									</p>
+									
+									<img src="resources/Binary Operation Table.jpg">
+									
+									<p>
+									We notice that the transport digit is 0 at most of the time. Only when we add 1 and 1 we get a 0 result but a 1 at the transport digit. Here is the circuit that matches these tables:
+									</p>
+									
+									<img src="resources/Adder Circuit 1.jpg">
+									
+									<p>
+									It is built using one XOR  gate and one AND gate connected to the inputs and each one with its own output. It’s easy to see that the first output is the result of the operation and the second one represents the transport digit.
+									</p>
+									
+								</li>
+							</ol>
+						</p>
+					</li>
+					
+					<li>
+						<a class="ChapterText" name="Conclusions">
+						Conclusions
+						</a>
+						
+						
+						<p class="CenteredParagraph">
+							<ol class="DecimalLeftCenteredList">
+								<li>
+									<a class="SubChapterText" name="Conclusions - How computers work">
+									It’s nice to know a little about how computers work
+									</a>
+									
+									<p>
+									Even if you are a casual computer user, it is good to know some aspects regarding how computers work and how science was needed to create such wonderful machines. In case you are an advanced computer user, then knowing these aspects is crucial. Not only they help you understand them better, but also you can easier troubleshoot any problems you may encounter.
+									</p>
+								</li>
+								
+								<li>
+									<a class="SubChapterText" name="Conclusions - Why this program helps you">
+									Two reasons why this program helps you
+									</a>
+									
+									<p>
+									By using this program, we get very close to the science of the circuit building making us understanding them very well from the logical point of view, not the physical one. Our program is not just a tool for creating logic circuits, but is also a tool for simulating them. This simulation process can be used before any testing of a project, showing us what to expect from the final circuit.
+									</p>
+									
+									<p>
+									The program was successfully tested by the first year students of the Faculty of Mathematics and Informatics, University of Transilvania, Brasov. It has been of great help for them to study the Computer Architecture discipline.
+									</p>
+									
+									<p>
+									<font class="AugmentedText">So that being said, we hope that the users will enjoy this program together with the capabilities and the facilities it has!</font>
+									</p>
+								</li>
+								
+							</ol>
+						</p>
+					</li>
+					
+				</ol>
+				
+			</td>
+			
+		</tr>
+		
+		<tr>
+			<td class="BorderedTD">
+				<h3>
+				Contact the authors:
+				</h3>
+				
+				<p>
+				Ivan Andrei: af.ivan@live.com
+				</p>
+				
+				<p>
+				Radoi Ovidiu: oviradoi2003@yahoo.com
+				</p>
+			</td>
+		</tr>
+		
+	</table>
+
+</body>
+</html>

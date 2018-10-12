@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Drawing;
+using System.ComponentModel;
+
+namespace LCD.Components.Gates
+{
+    [Serializable]
+    public abstract class Gate
+    {
+        public Point Location;
+        [Browsable(false)]
+        public Size Size { get; set; }
+        [Browsable(true), Description("The angle of this gate")]
+        public float Angle { get; set; }
+        [Browsable(false)]
+        public bool Selected { get; set; }
+
+        public virtual void Simulate() { }
+        public virtual void Draw(Graphics g) { }
+        public virtual void Reset() { }
+        public virtual void MouseDown() { }
+        public virtual void MouseUp() { }
+
+        public virtual Dot DotOn(Point p)
+        {
+            return null;
+        }
+        public override string ToString()
+        {
+            return "Gate (" + Location.X + "," + Location.Y + ")";
+        }
+    }
+}

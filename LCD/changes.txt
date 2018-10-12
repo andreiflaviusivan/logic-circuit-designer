@@ -1,0 +1,12 @@
+Here is a list of releases and their bug fixes/changes:
+
+-> version 1.5:
+
+	- this is the first version released under GPL license
+	- the user can arrange the wires in whichever way he wants
+	- the gates can be rotated
+	- very gate can have a description showing what its purpose is
+	- module functionality simplified
+	- a rectangle that can select many gates and wires at once
+	- a settings window has been created
+	- now help is included

@@ -1,0 +1,111 @@
+body
+{
+	background-color:white;
+}
+
+td 
+{ 
+	text-align:center; 
+}
+
+td.RightAlignTD
+{
+	text-align:right;
+}
+
+td.BorderedTD
+{
+	border-style:dashed;
+	border-width:2px;
+}
+
+th
+{
+	text-align:center;
+	text-decoration:underline;
+	text-transform:uppercase;
+	color:gray;
+	font-size:170%;
+	font-family:"Times New Roman";
+}
+
+p.ItaliqueParagraph
+{
+	font-style:italic;
+}
+
+p.LeftCenteredParagraph
+{
+	text-align:left;
+}
+
+p.CenteredParagraph
+{
+	text-align:left;
+}
+
+.AugmentedText
+{
+	font-weight:bold;
+	font-size:110%;
+}
+
+.InsistedText
+{
+	font-style:italic;
+}
+
+.NormalText
+{
+
+}
+
+.SmallText
+{
+	font-weight:normal;
+	font-size:70%;
+}
+
+.ChapterText
+{
+	font-size:120%;
+	color:blue;
+	letter-spacing:3;
+	text-transform:uppercase;
+	text-shadow:2;
+}
+
+.SubChapterText
+{
+	font-size:100%;
+	color:black;
+	text-align:left;
+	text-decoration:underline;
+}
+
+ol.UpperRomanList
+{
+	list-style-type:upper-roman;
+}
+
+ol.UpperRomanLeftCenteredList
+{
+	list-style-type:upper-roman;
+	text-align:left;
+}
+
+ol.DecimalList
+{
+	list-style-type:decimal;
+}
+
+ol.DecimalLeftCenteredList
+{
+	list-style-type:decimal;
+	text-align:left;
+}
+
+ul.SquareList
+{
+	list-style-type:square;
+}

@@ -5,11 +5,11 @@ Logic Circuit Designer is a lightweight software application whose purpose is to
 
 It can be used for educational purposes, as it offer you the possibility to learn how to build a circuit design and understand how a logic circuit works.
 
-# Intuitive Interace
+## Intuitive Interace
 
 You are welcomed by a well-organized set of functions that enable you to interact with your logic circuit. You are allowed to flip switches, change the input data, as well as watch how the output data is modified for sequential models. The multi-tabbed interface enables you to work with multiple circuits at the same time.
 
-# Main features
+## Main features
 
 Logic Circuit Designer gives you the possibility to add gates to a circuit and you can choose from basic (e.g. AND, OR, NOT XOR, NOR) or extended gates (e.g. button, led, clock).
 
@@ -19,15 +19,15 @@ Other notable characteristics worth being mentioned are represented by the possi
 
 During our testing we have noticed that Logic Circuit Designer carries out a task quickly and without errors. It remains light on system resources, so the overall performance of the computer is not hampered.
 
-# Tutorial
+## Tutorial
 
 For a tutorial please check the help page
 
-# Releases
+## Releases
 
 To be released soon!
 
-# Contact
+## Contact
 
 Authors:
 Andrei Ivan: af.ivan@live.com

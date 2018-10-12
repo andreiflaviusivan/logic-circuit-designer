@@ -5,6 +5,8 @@ Logic Circuit Designer is a lightweight software application whose purpose is to
 
 It can be used for educational purposes, as it offer you the possibility to learn how to build a circuit design and understand how a logic circuit works.
 
+![Main Window](https://github.com/andreiflaviusivan/logic-circuit-designer/raw/master/LCD/LCD/Help/resources/Main%20Window.png)
+
 ## Intuitive Interace
 
 You are welcomed by a well-organized set of functions that enable you to interact with your logic circuit. You are allowed to flip switches, change the input data, as well as watch how the output data is modified for sequential models. The multi-tabbed interface enables you to work with multiple circuits at the same time.
@@ -30,5 +32,7 @@ To be released soon!
 ## Contact
 
 Authors:
+
 Andrei Ivan: af.ivan@live.com
+
 Radoi Ovidiu: oviradoi2003@yahoo.com

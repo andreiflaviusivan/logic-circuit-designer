@@ -27,7 +27,9 @@ For a tutorial please check the help page
 
 ## Releases
 
-To be released soon!
+Version 1.5 is the latest one and it was released ages ago! No issues reported yet!
+
+You can download it [here](https://github.com/andreiflaviusivan/logic-circuit-designer/raw/master/Exe/LCD.zip)
 
 ## Contact
 

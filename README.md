@@ -36,4 +36,5 @@ You can download it [here](https://github.com/andreiflaviusivan/logic-circuit-de
 Authors:
 
 Andrei Ivan
+
 Ovidiu Radoi

@@ -157,25 +157,22 @@
     </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="VistaSecurity.cs" />
-    <Content Include="SampleCircuits\JK.circuit">
+    <Content Include="SampleCircuits\Adder Circuit.circuit">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SampleCircuits\mem.circuit">
+    <Content Include="SampleCircuits\Four Input Demultiplexer.circuit">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SampleCircuits\SR.circuit">
+    <Content Include="SampleCircuits\Four Input Multiplexer.circuit">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SampleCircuits\sscc.circuit">
+    <Content Include="SampleCircuits\Full Adder With Comutation.circuit">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SampleCircuits\sum.circuit">
+    <Content Include="SampleCircuits\Full Adder.circuit">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SampleCircuits\sumcc.circuit">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SampleCircuits\zz.circuit">
+    <Content Include="SampleCircuits\Memory.circuit">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

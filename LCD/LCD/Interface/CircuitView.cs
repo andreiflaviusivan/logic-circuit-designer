@@ -233,8 +233,8 @@ namespace LCD.Interface
             {
                 gr = graph;
             }
-            //gr.Clear(Settings.Default.CircuitBackColor);
-            //gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            gr.Clear(Settings.Default.CircuitBackColor);
+            gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             //Draw the floating gate if it exists
 
@@ -286,44 +286,47 @@ namespace LCD.Interface
             {
                 gr = graph;
             }
+
+            RedrawGates(graph);
+
             //gr.Clear(Settings.Default.CircuitBackColor);
             //gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             //Draw the floating gate if it exists
 
-            foreach (Gate g in circuit.Gates)
-            {
-                if (g.GetRectangle().IntersectsWith(intersetionRect))
-                {
-                    g.Draw(gr);
-                }
-            }
+            //foreach (Gate g in circuit.Gates)
+            //{
+            //    if (g.GetRectangle().IntersectsWith(intersetionRect))
+            //    {
+            //        g.Draw(gr);
+            //    }
+            //}
 
 
-            foreach (Wire wire in circuit.Wires)
-            {
-                Point[] pointArray = wire.GetLinePoints();
+            //foreach (Wire wire in circuit.Wires)
+            //{
+            //    Point[] pointArray = wire.GetLinePoints();
 
-                bool ok = false;
+            //    bool ok = false;
 
-                foreach (Point point in pointArray)
-                {
-                    if (point.X >= intersetionRect.X &&
-                        point.X <= intersetionRect.Left + intersetionRect.Width &&
-                        point.Y >= intersetionRect.Y &&
-                        point.Y <= intersetionRect.Top + intersetionRect.Height)
-                    {
-                        ok = true;
-                    }
-                }
+            //    foreach (Point point in pointArray)
+            //    {
+            //        if (point.X >= intersetionRect.X &&
+            //            point.X <= intersetionRect.Left + intersetionRect.Width &&
+            //            point.Y >= intersetionRect.Y &&
+            //            point.Y <= intersetionRect.Top + intersetionRect.Height)
+            //        {
+            //            ok = true;
+            //        }
+            //    }
 
-                if (ok)
-                {
-                    wire.Draw(gr);
-                }
+            //    if (ok)
+            //    {
+            //        wire.Draw(gr);
+            //    }
 
 
-            }
+            //}
 
             if (graph == null)
             {
